@@ -10,3 +10,7 @@ edition = "2021"
 [[bin]]
 name = "9"
 path = "src/bin/9/9.palindrome-number.rs"
+
+[[bin]]
+name = "912"
+path = "src/bin/912/912.sort-an-array.rs"

@@ -1,0 +1,27 @@
+/*
+ * @lc app=leetcode id=912 lang=rust
+ *
+ * [912] Sort an Array
+ */
+
+// @lc code=start
+impl Solution {
+    pub fn sort_array(nums: Vec<i32>) -> Vec<i32> {
+
+        let mut answer = nums.clone();
+
+        for i in 1..nums.len() {
+
+            let mut j = i - 1;
+
+            while j >= 0 && answer[j + 1] < answer[j] {
+                answer.swap(j + 1, j);
+                j -= 1;
+            }
+
+        }
+
+        answer
+    }
+}
+// @lc code=end
