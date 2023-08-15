@@ -12,10 +12,17 @@ impl Solution {
 
         for i in 1..nums.len() {
 
-            let mut j = i - 1;
+            let mut j: usize = i - 1;
 
-            while j >= 0 && answer[j + 1] < answer[j] {
-                answer.swap(j + 1, j);
+            loop {
+                if answer[j + 1] < answer[j] {
+                    answer.swap(j + 1, j);
+                } else {
+                    break;
+                };
+
+                if j == 0 {break};
+
                 j -= 1;
             }
 
