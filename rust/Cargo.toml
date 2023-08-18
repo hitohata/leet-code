@@ -10,3 +10,7 @@ edition = "2021"
 [[bin]]
 name = "9"
 path = "src/bin/9/9.palindrome-number.rs"
+
+[[bin]]
+name = "17"
+path = "src/bin/17/17.letter-combinations-of-a-phone-number.rs"
