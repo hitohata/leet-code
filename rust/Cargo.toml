@@ -10,3 +10,7 @@ edition = "2021"
 [[bin]]
 name = "9"
 path = "src/bin/9/9.palindrome-number.rs"
+
+[[bin]]
+name = "1768"
+path = "src/bin/1768/1768.merge-strings-alternately.rs"
