@@ -23,7 +23,7 @@ impl Solution {
                 return mid as i32
             }
 
-            if nums[mid] > target {
+            if nums[mid] < target {
                 left = mid;
             } else {
                 right = mid;
