@@ -12,5 +12,9 @@ name = "9"
 path = "src/bin/9/9.palindrome-number.rs"
 
 [[bin]]
+name = "704"
+path = "src/bin/704/704.binary-search.rs"
+
+[[bin]]
 name = "1768"
 path = "src/bin/1768/1768.merge-strings-alternately.rs"
