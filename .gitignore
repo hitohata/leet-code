@@ -1,1 +1,4 @@
 rust/target
+playgraund/rust
+playgraund/typesctipt/node_modules
+!playgraund/rust/Cargo.toml
