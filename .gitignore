@@ -1,4 +1,4 @@
 rust/target
-playgraund/rust
-playgraund/typesctipt/node_modules
-!playgraund/rust/Cargo.toml
+playground/rust/target
+playground/typescript/node_modules
+# !playgraund/rust/Cargo.toml
