@@ -12,6 +12,10 @@ name = "9"
 path = "src/bin/9/9.palindrome-number.rs"
 
 [[bin]]
+name = "198"
+path = "src/bin/198/198.house-robber.rs"
+
+[[bin]]
 name = "1217"
 path = "src/bin/1217/1217.minimum-cost-to-move-chips-to-the-same-position.rs"
 
