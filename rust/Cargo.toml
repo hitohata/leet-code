@@ -12,6 +12,10 @@ name = "9"
 path = "src/bin/9/9.palindrome-number.rs"
 
 [[bin]]
+name = "14"
+path = "src/bin/14/14.longest-common-prefix.rs"
+
+[[bin]]
 name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
