@@ -16,6 +16,10 @@ name = "14"
 path = "src/bin/14/14.longest-common-prefix.rs"
 
 [[bin]]
+name = "28"
+path = "src/bin/28/28.find-the-index-of-the-first-occurrence-in-a-string.rs"
+
+[[bin]]
 name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
