@@ -16,6 +16,10 @@ name = "14"
 path = "src/bin/14/14.longest-common-prefix.rs"
 
 [[bin]]
+name = "39"
+path = "src/bin/39/39.combination-sum.rs"
+
+[[bin]]
 name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
