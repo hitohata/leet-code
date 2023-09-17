@@ -20,6 +20,10 @@ name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
 [[bin]]
+name = "628"
+path = "src/bin/628/628.maximum-product-of-three-numbers.rs"
+
+[[bin]]
 name = "1217"
 path = "src/bin/1217/1217.minimum-cost-to-move-chips-to-the-same-position.rs"
 
