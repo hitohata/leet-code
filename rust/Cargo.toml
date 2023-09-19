@@ -20,6 +20,10 @@ name = "39"
 path = "src/bin/39/39.combination-sum.rs"
 
 [[bin]]
+name = "136"
+path = "src/bin/136/136.single-number.rs"
+
+[[bin]]
 name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
