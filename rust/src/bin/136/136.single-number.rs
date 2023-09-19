@@ -7,9 +7,7 @@
 // @lc code=start
 impl Solution {
     pub fn single_number(nums: Vec<i32>) -> i32 {
-        let mut ans = 0;
-        nums.iter().for_each(|x| ans = ans ^ x);
-        ans
+        nums.iter().fold(0, |acc, x| acc ^ x)
     }
 }
 // @lc code=end
