@@ -32,6 +32,10 @@ name = "700"
 path = "src/bin/700/700.search-in-a-binary-search-tree.rs"
 
 [[bin]]
+name = "701"
+path = "src/bin//701/701.insert-into-a-binary-search-tree.rs"
+
+[[bin]]
 name = "628"
 path = "src/bin/628/628.maximum-product-of-three-numbers.rs"
 
