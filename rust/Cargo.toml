@@ -28,6 +28,10 @@ name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
 [[bin]]
+name = "450"
+path = "src/bin/450/450.delete-node-in-a-bst.rs"
+
+[[bin]]
 name = "700"
 path = "src/bin/700/700.search-in-a-binary-search-tree.rs"
 

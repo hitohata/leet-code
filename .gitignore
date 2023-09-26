@@ -4,3 +4,5 @@ playground/typescript/node_modules
 playgraund/rust/src/main.rs
 playgraund/typescript/main.ts
 .idea
+.vscode
+target
