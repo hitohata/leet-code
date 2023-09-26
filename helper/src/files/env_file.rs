@@ -41,7 +41,7 @@ impl LanguageAndExtension {
     /// ```
     pub fn new() -> Vec<Self> {
         let file_name = if cfg!(test) {
-            "test_language.json"
+            "./test_data/test_language.json"
         } else {
             "language.json"
         };
