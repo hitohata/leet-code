@@ -1,22 +1,34 @@
-use dotenv::dotenv;
+use dotenv;
 use serde::Deserialize;
 use std::env;
+use std::env::var;
 use std::fs::File;
 use std::io::BufReader;
+use std::path::PathBuf;
 
-pub struct EnvFile {
+pub struct TargetPath {
     pub input_dir: String,
     pub output_dir: String,
 }
 
-impl EnvFile {
-    pub fn file_dir() -> Result<Self, String> {
-        todo!()
+impl TargetPath {
+    pub fn file_dir() -> Self {
+        Self::read_file();
+        TargetPath {
+            input_dir: var("INPUT_DIR").expect("input path not found in the .env file"),
+            output_dir: var("OUTPUT_DIR").expect("output path not found in the .env file"),
+        }
     }
 
-    fn read_file() -> String {
-        dotenv();
-        todo!()
+    /// read the .env file and set a enviroment value
+    /// if not found, panic
+    fn read_file() -> () {
+        let dotenv_file = if cfg!(test) {
+            dotenv::from_filename("./test_data/test.env")
+        } else {
+            dotenv::dotenv()
+        };
+        dotenv_file.expect("the .env file was not found, make sure it exists.");
     }
 }
 
@@ -71,6 +83,12 @@ impl LanguageAndExtension {
 #[cfg(test)]
 mod tests {
     use super::*;
+
+    #[test]
+    #[should_panic(expected = "the .env file was not found, make sure it exists.")]
+    fn env_file_not_found() {
+        TargetPath::read_file();
+    }
 
     #[test]
     fn language_extention_file_open() {
