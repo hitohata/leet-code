@@ -28,6 +28,10 @@ name = "198"
 path = "src/bin/198/198.house-robber.rs"
 
 [[bin]]
+name = "283"
+path = "src/bin/283/283.move-zeroes.rs"
+
+[[bin]]
 name = "700"
 path = "src/bin/700/700.search-in-a-binary-search-tree.rs"
 
