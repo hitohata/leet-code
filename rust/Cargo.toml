@@ -20,6 +20,10 @@ name = "39"
 path = "src/bin/39/39.combination-sum.rs"
 
 [[bin]]
+name = "62"
+path = "src/bin/62/62.unique-paths.rs"
+
+[[bin]]
 name = "136"
 path = "src/bin/136/136.single-number.rs"
 
