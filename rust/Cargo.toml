@@ -40,6 +40,10 @@ name = "700"
 path = "src/bin/700/700.search-in-a-binary-search-tree.rs"
 
 [[bin]]
+name = "705"
+path = "src/bin/705/705.design-hash-set.rs"
+
+[[bin]]
 name = "701"
 path = "src/bin//701/701.insert-into-a-binary-search-tree.rs"
 
