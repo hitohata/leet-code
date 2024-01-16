@@ -6,8 +6,7 @@
 
 // @lc code=start
 struct RecentCounter {
-    called_time: Vec<i32>,
-    pin: usize
+    called_time: std::collections::VecDeque<i32>,
 }
 
 
@@ -19,28 +18,22 @@ impl RecentCounter {
 
     fn new() -> Self {
         RecentCounter {
-            called_time: vec![],
-            pin: 0
+            called_time: std::collections::VecDeque::new(),
         }
     }
 
     fn ping(&mut self, t: i32) -> i32 {
-        self.called_time.push(t);
+        self.called_time.push_back(t);
 
-        let smallest = t - 3000;
-        let largest = t;
-        let mut count = 0;
-
-        for i in (self.pin..(self.called_time.len())).rev() {
-            if smallest <= self.called_time[i] && self.called_time[i] <= largest {
-                count += 1;
-                self.pin = i;
+        for _ in 0..self.called_time.len() {
+            if (self.called_time.front().unwrap() < &(t - 3000)) {
+                self.called_time.pop_front();
             } else {
                 break;
             }
         }
 
-        count
+        self.called_time.len() as i32
     }
 }
 
