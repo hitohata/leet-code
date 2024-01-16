@@ -48,6 +48,10 @@ name = "628"
 path = "src/bin/628/628.maximum-product-of-three-numbers.rs"
 
 [[bin]]
+name = "933"
+path = "src/bin/933/933.number-of-recent-calls.rs"
+
+[[bin]]
 name = "1217"
 path = "src/bin/1217/1217.minimum-cost-to-move-chips-to-the-same-position.rs"
 
