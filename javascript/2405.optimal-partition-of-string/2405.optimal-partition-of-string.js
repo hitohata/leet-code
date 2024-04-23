@@ -10,18 +10,15 @@
  * @return {number}
  */
 var partitionString = function(s) {
-    const sList = s.split("");
-
-    let map = new Map();
+    let set = new Set();
     let p = 1;
 
-    for (i = 0; i < sList.length; i++) {
-        const res = map.get(sList[i]);
-        if (res) {
-            map = new Map();
+    for (i = 0; i < s.length; i++) {
+        if (set.has(s[i])) {
+            set.clear();
             p++;
         }
-        map.set(sList[i], true); 
+        set.add(s[i]);
     }
     return p
 };
