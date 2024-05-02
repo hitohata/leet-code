@@ -66,3 +66,7 @@ path = "src/bin/1431/1431.kids-with-the-greatest-number-of-candies.rs"
 [[bin]]
 name = "1768"
 path = "src/bin/1768/1768.merge-strings-alternately.rs"
+
+[[bin]]
+name = "2441"
+path = "src/bin/2441/2441.largest-positive-integer-that-exists-with-its-negative.rs"
