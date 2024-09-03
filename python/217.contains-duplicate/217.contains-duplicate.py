@@ -7,6 +7,6 @@
 # @lc code=start
 class Solution:
     def containsDuplicate(self, nums: List[int]) -> bool:
-        
+        removed_duplicate = set(nums)
+        return len(removed_duplicate) != len(nums)
 # @lc code=end
-
